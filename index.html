@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Encriptador Alura</title>
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="shortcut icon" href="./img/logo.svg" type="image/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="contenedor">
+        <img class="logo" src="./img/logo.svg" alt="logo alura" />
+        <h1 class="titulo_logo">lura Encriptador</h1>
+      </div>
+    </header>
+
+    <main>
+      <div class="contenedor">
+        <div class="encriptador">
+          <form class="encriptador_form">
+            <div class="texto_en_area">
+              <textarea
+                name="texto"
+                id="text"
+                placeholder="Ingrese el texto aqui..."
+              ></textarea>
+              <div class="texto_info">
+                <div class="info">
+                  <img src="./img/exclamation-circle.svg" />
+                  <p id="advertencia">Solo letras minúsculas</p>
+                </div>
+              </div>
+
+              <div class="btn">
+                <button id="left_button" class="btn_encriptar" type="button">
+                  <img src="./img/candado.svg" /> Encriptar
+                </button>
+                <button
+                  id="right_button"
+                  class="btn_desencriptar"
+                  type="button"
+                >
+                  <img src="./img/candado-abierto.svg" /> Desencriptar
+                </button>
+              </div>
+            </div>
+          </form>
+
+          <div class="resultado">
+            <div class="contenedor_resultado">
+              <div class="contenido_no_resuelto" id="noResuelto">
+                <div class="logo_resultado">
+                  <img
+                    src="./img/logoEncriptado.png"
+                    alt="png logo encriptado"
+                  />
+                </div>
+                <p>Ningún mensaje fue encontrado</p>
+                <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+              </div>
+
+              <div class="contenido_resuelto" id="resuelto">
+                <textarea
+                  name="texto_resultado"
+                  id="text_result"
+                  disabled
+                ></textarea>
+                <button id="copy" type="button">
+                  <img src="./img/copia.svg" /> Copiar
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <p class="copyright">
+        © Created by
+        <a
+          href="https://github.com/sebastianlencinas"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Sebastian Lencinas</a
+        >
+      </p>
+    </footer>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
